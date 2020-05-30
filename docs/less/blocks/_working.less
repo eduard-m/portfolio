@@ -1,0 +1,273 @@
+.section__working {
+  padding: 60px 0 65px;
+
+  @media (min-width: 768px) {
+    padding: 90px 0 90px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 150px 0 150px;
+    background-image: url(../img/working/working-bg.jpg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: repeat;
+  }
+}
+
+.section__working .content__title {
+  text-align: center;
+  margin-bottom: 55px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 130px;
+  }
+
+}
+
+.section__working .line__bottom {
+  font-size: 35px;
+
+  &::after {
+    height: 12px;
+    bottom: 5px;
+  }
+
+
+  @media (min-width: 768px) {
+    font-size: 52px;
+
+    &::after {
+      height: 15px;
+      bottom: 10px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 64px;
+
+    &::after {
+      height: 15px;
+      bottom: 13px;
+    }
+  }
+}
+
+
+.working__content {
+  max-width: 1005px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.working__row {
+  display: flex;
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 15px;
+  max-width: 528px;
+  cursor: pointer;
+
+  &:nth-child(even) {
+
+    .working__row__wrap {
+      padding-left: 20px;
+    }
+  }
+
+  &:nth-child(odd) {
+    flex-direction: row;
+
+    .working__row__wrap {
+      padding-left: 20px;
+      
+    
+    }
+
+    &::before {
+      left: unset;
+      left: 38px;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 38px;
+    bottom: 0;
+    top: 102px;
+    width: 3px;
+    background-color: #e1eef4;
+  }
+
+  &:last-child {
+    &::before {
+      width: 0;
+    }
+  }
+
+  &:first-child {
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 184px;
+      top: -75px;
+      right: 36px;
+      width: 3px;
+      background-color: #e1eef4;
+      display: none;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+      max-width: 55%;
+
+      .working__row__wrap {
+        padding-left: 0;
+        padding-right: 40px;
+        text-align: right;
+      }
+
+      &::before {
+        left: unset;
+        right: 36px;
+      }
+    }
+
+    &:nth-child(even) {
+      margin-left: auto;
+      max-width: 55.5%;
+
+      .working__row__wrap {
+        padding-left: 40px;
+      }
+    }
+
+    &:first-child {
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: 168px;
+        top: -75px;
+        right: 36px;
+        width: 3px;
+        background-color: #e1eef4;
+        display: block;
+      }
+    }
+  }
+
+  @media (min-width:1024px) {
+    &:nth-child(even) {
+      margin-left: auto;
+      max-width: 52.7%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &:nth-child(even) {
+      max-width: 52.5%;
+      margin-left: auto;
+    }
+
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+      max-width: 55%;
+
+      &::before {
+        left: unset;
+        right: 36px;
+      }
+    }
+
+    &:first-child {
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: 184px;
+        top: -75px;
+        right: 36px;
+        width: 3px;
+        background-color: #e1eef4;
+      }
+    }
+  }
+}
+
+.working__row:hover .line__bottom::after {
+  background-color: #ed574f;
+  transition: .2s;
+}
+
+.working__row__icon {
+  flex-shrink: 0;
+  width: 78px;
+  height: 78px;
+  border-radius: 28px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 3px 35px 0px rgba(0, 112, 187, 0.35);
+}
+
+.working__row__icon-item {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 25%;
+  left: 25%;
+}
+
+
+.working__row__text-title .line__bottom {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 800;
+  color: #000;
+
+  &::after {
+height: 0;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 26px;
+    &::after {
+      height: 7px;
+      bottom: 3px;
+      left: 0;
+      right: 0;
+    }
+  }
+}
+
+.working__row__text-desc {
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 500;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 18px;
+  }
+}
+
+.working__row__text-time {
+  font-size: 14px;
+  font-weight: 700;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 18px;
+  }
+}

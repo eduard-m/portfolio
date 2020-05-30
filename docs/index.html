@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:100,300,400,500,700,800,900&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div id="overlay"></div>
+
+    <header class="header">
+        <div class="header__nav">
+            <a href="index.html" class="header__logo line__bottom">
+                ЭМ
+            </a>
+
+            <nav class="header__menu">
+                    <a class="header__menu-item" href="index.html ">Главная</a>
+                    <a class="header__menu-item" href="works.html">Работы</a>
+                    <a class="header__menu-item" href="contacts.html">Контакты</a>
+            </nav>
+
+            <div class="header__social">
+                <a class="header__social-item" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="header__social-item" target="_blank" href="https://github.com/eduard-m"><i class="fab fa-github"></i></a>
+                <a class="header__social-item" target="_blank" href="https://vk.com/id333322776"><i class="fab fa-vk"></i></a>
+            </div>
+
+            <div class="toggle-menu">
+                <span></span>
+            </div>
+
+        </div>
+
+        <div class="container">
+
+            <div class="header__wrap">
+
+                    <div class="header__content__photo">
+                        <img src="./img/header/myphoto.jpg" alt="MyPhoto">
+                        <div class="header__content__photo-bg"></div>
+                    </div>
+
+                    <div class="header__content__info">
+
+                        <div class="info__name">
+                            <span class="line__bottom">Эдуард</span>
+                            <br><span class="line__bottom">Макаенков</span>
+                        </div>
+                        <div class="info__text">
+                            <p>
+                                Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с <br>соблюдением сроков и выполнением ТЗ. 
+                            </p>
+                        </div>
+
+                        <div class="info__buttons">
+                            <a href="#skills" class="info__button-left">Познакомиться</a>
+                            <a href="#contacts" class="info__button-right">Контакты</a>
+                        </div>
+
+                    </div>
+
+            </div>
+
+        </div>
+
+        <div class="background__img">
+            <img src="./img/header/bgtable.png" alt="Table">
+        </div>
+
+
+        <section class="skills">
+            <div class="container">
+                <div class="skills__content">
+
+                    <div class="skills__column__left">
+                        
+                        <div class="skills__col__title" id="skills">
+                            <h3>
+                              Что я умею:  
+                            </h3>
+                        </div>
+                        <div class="skills__col__list">
+                            <ul>
+                                <li>pixel perfect, полное соответствие макету.</li>
+                                <li>верстаю с сеткой или без.</li>
+                                <li>адаптивная верстка под мобильные устройства.</li>
+                                <li>оптимизация под retina экраны.</li>
+                                <li>с Bootstrap и без него.</li>
+                            </ul>
+                        </div>
+
+                        <div class="skills__col__button">
+                            <a href="#portfolio">Смотреть работы</a>
+                        </div>
+                    </div>
+
+                    <div class="skills__column__right">
+
+                        <div class="skills__col__title">
+                            <h3>
+                              На связи:  
+                            </h3>
+                        </div>
+
+                        <div class="skills__col__social">
+                            <ul>
+                                <li class="skills__col__social-item"><a href="https://github.com/eduard-m" target="_blank"><i style="color: #000;" class="fab fa-github"></i></a></li>
+                                <li class="skills__col__social-item"><a href="https://t.me/johndi666" target="_blank"><i style="color: #039be5;" class="fab fa-telegram"></i></a></li>
+                                <li class="skills__col__social-item"><a href="https://vk.com/id333322776" target="_blank"><i style="color: #4d76a1;" class="fab fa-vk"></i></a></li>
+                                <li class="skills__col__social-item"><a href="mailto:ediqedid@gmail.com" target="_blank"><i style="color: #9d1a3b;" class="far fa-envelope"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="skills__col__email">
+                            <a href="mailto:ediqedid@gmail.com" target="_blank">ediqediq@gmail.com</a>
+                        </div>
+                    </div>
+
+            </div>
+            </div>
+        </section>
+
+    </header>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+
+            <div class="content__title">
+                <h2>
+                   <span class="content__title line__bottom">Портфолио</span>   
+                </h2>
+            </div>
+
+            <div class="portfolio__variants">
+                    <button class="portfolio__vartiants-item mixitup-control-active" id="allworks" data-filter="all">Все работы</button>
+                    <button class="portfolio__vartiants-item" data-filter=".boot">Bootstrap</button>
+                    <button class="portfolio__vartiants-item" data-filter=".wp">WordPress</button>
+                    <button class="portfolio__vartiants-item" data-filter=".front">Frontend</button>
+            </div>
+
+            <div class="portfolio__wrapper__up" id="portfolio-projects">
+                <div class="portfolio__wrapper-leftcol">
+                    <a href="projects.html" class="wrapper__img mix front">
+                        <img src="./img/portfolio/wrapper-img1.jpg" alt="portfolio">
+                        <button class="more-btn">
+                            Смотреть проект
+                        </button>
+                    </a>
+
+                    <div class="wrapper__up__desc">
+                        <div class="wrapper__up__desc-title">
+                            <a class="wrapper__up__desc-title-link mix front" href="#">Верстка “Форест тревел”</a> 
+                        </div>
+                        <div class="wrapper__up__desc-text mix front">
+                            Верстка многостраничного сайта. 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="porfolio__wrapper-rightcol">
+                    <a href="#" class="wrapper__img mix boot">
+                        <img src="./img/portfolio/wrapper-img2.jpg" alt="portfolio">
+                        <button class="more-btn">
+                            Смотреть проект
+                        </button>
+                    </a>
+                        <div class="wrapper__up__desc-title">
+                           <a class="wrapper__up__desc-title-link mix boot" href="#">Сайт для коворкинга “Мечта”</a> 
+                        </div>
+                        <div class="wrapper__up__desc-text mix boot">
+                            Верстка лендинга.
+                        </div>
+                </div>
+            </div>
+
+            <div class="portfolio__wrapper__bot" id="portfolio-projects">
+
+                <div class="wrapper__bot">
+
+                    <a href="#" class="wrapper__bot-img mix wp">
+                        <img src="./img/portfolio/wrapper-bot-img1.jpg" alt="portfolio">
+                        <button class="more-btn">
+                            Смотреть проект
+                        </button>
+                    </a>
+
+                    <div class="wrapper__bot__desc-title">
+                       <a class="wrapper__bot__desc-title-link mix wp" href="#">Верстка “Мир Авто”</a>
+                    </div>
+
+                    <div class="wrapper__bot__desc-text mix wp">
+                        Верстка многостраничного сайта. 
+                    </div>
+
+                </div>
+
+                <div class="wrapper__bot">
+
+                    <a href="#" class="wrapper__bot-img mix boot">
+                        <img src="./img/portfolio/wrapper-bot-img2.jpg" alt="portfolio">
+                        <button class="more-btn">
+                            Смотреть проект
+                        </button>
+                    </a>
+
+                    <div class="wrapper__bot__desc-title">
+                       <a class="wrapper__bot__desc-title-link mix boot" href="#">Верстка “Мир Авто”</a>
+                    </div>
+
+                    <div class="wrapper__bot__desc-text mix boot">
+                        Верстка многостраничного сайта. 
+                    </div>
+
+                </div>
+
+                <div class="wrapper__bot">
+
+                    <a href="#" class="wrapper__bot-img">
+                        <img src="./img/portfolio/wrapper-bot-img3.jpg" alt="portfolio">
+                        <button class="more-btn">
+                            Смотреть проект
+                        </button>
+                    </a>
+
+                    <div class="wrapper__bot__desc-title">
+                       <a class="wrapper__bot__desc-title-link" href="#">Верстка “Мир Авто”</a> 
+                    </div>
+
+                    <div class="wrapper__bot__desc-text">
+                        Верстка многостраничного сайта. 
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__working">
+        <div class="container">
+            
+            <div class="content__title">
+                <h2>
+                    <span class="line__bottom">Как я работаю</span> 
+                </h2>
+            </div>
+
+            <div class="working__content">
+
+                <div class="working__row">
+
+                    <div class="working__row__icon">
+                        <img class="working__row__icon-item" src="./img/working/working-icon1.png" alt="Layers">
+                    </div>
+
+                    <div class="working__row__wrap">
+
+                            <div class="working__row__text-title">
+                                <span class="line__bottom working__row__text-title">Оцениваю макет</span> 
+                            </div>
+
+                            <div class="working__row__text-desc">
+                                <p>Оцениваю объем работы, сложность,нюансы. Задаю вопросы.</p> 
+                            </div>
+
+                            <div class="working__row__text-time">
+                                Время: 2 - 4 часа
+                            </div> 
+
+                    </div>
+
+                </div>
+
+                <div class="working__row">
+ 
+                    <div class="working__row__icon">
+                        <img class="working__row__icon-item" src="./img/working/working-icon2.png" alt="Presentations">
+                    </div>
+
+                    <div class="working__row__wrap">
+
+                            <div class="working__row__text-title">
+                                <span class="line__bottom working__row__text-title">ТЗ, смета и график работ</span> 
+                            </div>
+
+                            <div class="working__row__text-desc">
+                                <p>Согласовываем техническое задание и график работ по проекту. Осмечиваю стоимость по этапам работы.</p> 
+                            </div>
+
+                            <div class="working__row__text-time">
+                                Время: 2 - 4 часа
+                            </div> 
+
+                    </div>
+
+                </div>
+
+                <div class="working__row">
+
+                    <div class="working__row__icon">
+                        <img class="working__row__icon-item" src="./img/working/working-icon3.png" alt="Time">
+                    </div>
+
+                    <div class="working__row__wrap">
+
+                            <div class="working__row__text-title">
+                                <span class="line__bottom working__row__text-title">Вы держите руку на пульсе</span> 
+                            </div>
+
+                            <div class="working__row__text-desc">
+                                <p>Выдаю клиенту доступ к GitHub репозиторию и доске Trello. Вы в любое время можете видеть актуальное состояние проекта и задач.</p> 
+                            </div>
+
+                            <div class="working__row__text-time">
+                                Время: 2 часа
+                            </div> 
+
+                    </div>
+
+                </div>
+
+                <div class="working__row">
+
+                    <div class="working__row__icon">
+                        <img class="working__row__icon-item" src="./img/working/working-icon4.png" alt="Code">
+                    </div>
+
+                    <div class="working__row__wrap">
+
+                            <div class="working__row__text-title">
+                                <span class="line__bottom working__row__text-title">Выполняю каждый этап</span> 
+                            </div>
+
+                            <div class="working__row__text-desc">
+                                <p>Поочередно выполняю каждый этап работы. Передаю результаты. Заказчик производит поэтапную оплату.</p> 
+                            </div>
+
+                            <div class="working__row__text-time">
+                                Время: 2 - 4 часа
+                            </div> 
+
+                    </div>
+
+                </div>
+
+                <div class="working__row">
+
+                    <div class="working__row__icon">
+                        <img class="working__row__icon-item" src="./img/working/working-icon5.png" alt="Diamond">
+                    </div>
+
+                    <div class="working__row__wrap">
+
+                            <div class="working__row__text-title">
+                                <span class="line__bottom working__row__text-title">Финальное ревью проекта</span> 
+                            </div>
+
+                            <div class="working__row__text-desc">
+                                <p>Проект готов. Финальное ревью и полировка до идеального состояния. Передаю файлы проекта, заливаю сайт на хостинг заказчика.</p> 
+                            </div>
+
+                            <div class="working__row__text-time">
+                                Время: 2 - 4 часа
+                            </div> 
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+
+        <div class="container">
+
+            <div class="content__title">
+                <h2>
+                    <span class="line__bottom">Контакты</span> 
+                </h2>
+            </div>
+
+            <div class="contacts__content">
+
+                <div class="contacts__content__wrapper">
+
+                    <div class="contacts__content__title">
+                        <p>
+                            Если вы ищите специалиста по верстке сайтов,<br> front-end разработчика в команду или для работы<br> над проектом —  напишите мне.
+                        </p>
+                    </div>
+
+                    <div class="contacts__content__relations">
+
+                        <div class="contacts__wrap">
+                            <div class="contacts__wrap-title">Email</div>
+                            <div class="contacts__wrap-text"><a href="mailto:ediqedid@gmail.com" target="_blank">ediq.ediq@gmail.com</a></div>
+                        </div>
+
+                        <div class="contacts__wrap">
+                            <div class="contacts__wrap-title">Skype</div>
+                            <div class="contacts__wrap-text"><a href="">eduard.makaenkov</a></div>
+                        </div>
+
+                        <div class="contacts__wrap">
+                            <div class="contacts__wrap-title">Телефон</div>
+                            <div class="contacts__wrap-text">+7 (911) 312-78-58</div>
+                        </div>
+
+                        <div class="contacts__wrap">
+                            <div class="contacts__wrap-title">Адрес</div>
+                            <div class="contacts__wrap-text">Россия, Петрозаводск</div>
+                        </div>
+                          
+
+                    </div>
+
+                    <div class="skills__col__social skills__contacts">
+                        <ul>
+                            <li class="skills__col__social-item"><a href="https://github.com/eduard-m" target="_blank"><i style="color: #000;" class="fab fa-github"></i></a></li>
+                            <li class="skills__col__social-item"><a href="https://t.me/johndi666" target="_blank"><i style="color: #039be5;" class="fab fa-telegram"></i></a></li>
+                            <li class="skills__col__social-item"><a href="https://vk.com/id333322776" target="_blank"><i style="color: #4d76a1;" class="fab fa-vk"></i></a></li>
+                            <li class="skills__col__social-item"><a href="mailto:ediqedid@gmail.com" target="_blank"><i style="color: #9d1a3b;" class="far fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+                <form class="contacts__form">
+
+                    <div class="contacts__form-item">
+                       <input class="form-item" name="email" type="text">
+                       <span class="placeholder">Ваш email</span>
+                    </div>
+
+                    <div class="contacts__form-item">
+                      <input class="form-item" name="theme" type="text">
+                      <span class="placeholder">Тема письма</span>  
+                    </div>
+
+                    <div class="contacts__form-item">
+                        <textarea class="form-item" name="message" type="text" rows="3"></textarea>
+                        <span class="placeholder">Сообщение</span>  
+                    </div>
+
+                    <div class="contacts__form-btn">
+                        <input type="submit" value="Отправить">
+                    </div>
+                    
+                </form>
+
+
+            </div>
+
+
+
+        </div>
+
+        <div class="background-img">
+            <img src="./img/contacts/dots-bg.png" alt="Dots">
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__content__name">
+                    &copy; 2020 — Эдуард Макаенков
+                </div>
+
+                <div class="footer__content__desc">
+                    <p>
+                        Веб-разработик из Петрозаводска, занимаюсь версткой и созданием сайтов. <br>Этот сайт сделал в рамках прохождения обучения по верстке на курсах от <a target="_blank" href="https://webcademy.ru/">WebCademy.ru</a> 
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./libs/mixitup3/mixitup.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

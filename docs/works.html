@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:100,300,400,500,700,800,900&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div id="overlay"></div>
+
+    <header class="portfolio__header">
+        <div class="portfolio__header__nav">
+            <a href="index.html" class="header__logo line__bottom">
+                ЭМ
+            </a>
+
+            <nav class="header__menu">
+                <a class="header__menu-item" href="index.html ">Главная</a>
+                <a class="header__menu-item" href="works.html">Работы</a>
+                <a class="header__menu-item" href="contacts.html">Контакты</a>
+            </nav>
+
+            <div class="header__social">
+                <a class="header__social-item" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="header__social-item" target="_blank" href="https://github.com/eduard-m"><i class="fab fa-github"></i></a>
+                <a class="header__social-item" target="_blank" href="https://vk.com/id333322776"><i class="fab fa-vk"></i></a>
+            </div>
+
+            <div class="toggle-menu">
+                <span></span>
+            </div>
+
+        </div>
+
+        <div class="container">
+
+            <div class="portfolio__content__title">
+                <h2>
+                   <span class="content__title line__bottom">Портфолио</span>   
+                </h2>
+            </div>
+
+            <div class="portfolio__variants">
+                <button class="portfolio__vartiants-item mixitup-control-active" id="allworks" data-filter="all">Все работы</button>
+                <button class="portfolio__vartiants-item" data-filter=".boot">Bootstrap</button>
+                <button class="portfolio__vartiants-item" data-filter=".wp">WordPress</button>
+                <button class="portfolio__vartiants-item" data-filter=".front">Frontend</button>
+        </div>
+
+        <div class="portfolio__wrapper__up" id="portfolio-projects">
+            <div class="portfolio__wrapper-leftcol">
+                <a href="projects.html" class="wrapper__img mix front">
+                    <img src="./img/portfolio/wrapper-img1.jpg" alt="portfolio">
+                    <button class="more-btn">
+                        Смотреть проект
+                    </button>
+                </a>
+
+                <div class="wrapper__up__desc">
+                    <div class="wrapper__up__desc-title">
+                        <a class="wrapper__up__desc-title-link mix front" href="#">Верстка “Форест тревел”</a> 
+                    </div>
+                    <div class="wrapper__up__desc-text mix front">
+                        Верстка многостраничного сайта. 
+                    </div>
+                </div>
+            </div>
+
+            <div class="porfolio__wrapper-rightcol">
+                <a href="#" class="wrapper__img mix boot">
+                    <img src="./img/portfolio/wrapper-img2.jpg" alt="portfolio">
+                    <button class="more-btn">
+                        Смотреть проект
+                    </button>
+                </a>
+                    <div class="wrapper__up__desc-title">
+                       <a class="wrapper__up__desc-title-link mix boot" href="#">Сайт для коворкинга “Мечта”</a> 
+                    </div>
+                    <div class="wrapper__up__desc-text mix boot">
+                        Верстка лендинга.
+                    </div>
+            </div>
+        </div>
+
+        <div class="portfolio__wrapper__bot" id="portfolio-projects">
+
+            <div class="wrapper__bot">
+
+                <a href="#" class="wrapper__bot-img mix wp">
+                    <img src="./img/portfolio/wrapper-bot-img1.jpg" alt="portfolio">
+                    <button class="more-btn">
+                        Смотреть проект
+                    </button>
+                </a>
+
+                <div class="wrapper__bot__desc-title">
+                   <a class="wrapper__bot__desc-title-link mix wp" href="#">Верстка “Мир Авто”</a>
+                </div>
+
+                <div class="wrapper__bot__desc-text mix wp">
+                    Верстка многостраничного сайта. 
+                </div>
+
+            </div>
+
+            <div class="wrapper__bot">
+
+                <a href="#" class="wrapper__bot-img mix boot">
+                    <img src="./img/portfolio/wrapper-bot-img2.jpg" alt="portfolio">
+                    <button class="more-btn">
+                        Смотреть проект
+                    </button>
+                </a>
+
+                <div class="wrapper__bot__desc-title">
+                   <a class="wrapper__bot__desc-title-link mix boot" href="#">Верстка “Мир Авто”</a>
+                </div>
+
+                <div class="wrapper__bot__desc-text mix boot">
+                    Верстка многостраничного сайта. 
+                </div>
+
+            </div>
+
+            <div class="wrapper__bot">
+
+                <a href="#" class="wrapper__bot-img">
+                    <img src="./img/portfolio/wrapper-bot-img3.jpg" alt="portfolio">
+                    <button class="more-btn">
+                        Смотреть проект
+                    </button>
+                </a>
+
+                <div class="wrapper__bot__desc-title">
+                   <a class="wrapper__bot__desc-title-link" href="#">Верстка “Мир Авто”</a> 
+                </div>
+
+                <div class="wrapper__bot__desc-text">
+                    Верстка многостраничного сайта. 
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="portfolio__wrapper__bot" id="portfolio-projects">
+
+            <div class="wrapper__bot">
+
+                <a href="#" class="wrapper__bot-img mix wp">
+                    <img src="./img/portfolio/wrapper-bot-img1.jpg" alt="portfolio">
+                    <button class="more-btn">
+                        Смотреть проект
+                    </button>
+                </a>
+
+                <div class="wrapper__bot__desc-title">
+                   <a class="wrapper__bot__desc-title-link mix wp" href="#">Верстка “Мир Авто”</a>
+                </div>
+
+                <div class="wrapper__bot__desc-text mix wp">
+                    Верстка многостраничного сайта. 
+                </div>
+
+            </div>
+
+            <div class="wrapper__bot">
+
+                <a href="#" class="wrapper__bot-img mix boot">
+                    <img src="./img/portfolio/wrapper-bot-img2.jpg" alt="portfolio">
+                    <button class="more-btn">
+                        Смотреть проект
+                    </button>
+                </a>
+
+                <div class="wrapper__bot__desc-title">
+                   <a class="wrapper__bot__desc-title-link mix boot" href="#">Верстка “Мир Авто”</a>
+                </div>
+
+                <div class="wrapper__bot__desc-text mix boot">
+                    Верстка многостраничного сайта. 
+                </div>
+
+            </div>
+
+            <div class="wrapper__bot">
+
+                <a href="#" class="wrapper__bot-img">
+                    <img src="./img/portfolio/wrapper-bot-img3.jpg" alt="portfolio">
+                    <button class="more-btn">
+                        Смотреть проект
+                    </button>
+                </a>
+
+                <div class="wrapper__bot__desc-title">
+                   <a class="wrapper__bot__desc-title-link" href="#">Верстка “Мир Авто”</a> 
+                </div>
+
+                <div class="wrapper__bot__desc-text">
+                    Верстка многостраничного сайта. 
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="portfolio__wrapper__bot" id="portfolio-projects">
+
+            <div class="wrapper__bot">
+
+                <a href="#" class="wrapper__bot-img mix wp">
+                    <img src="./img/portfolio/wrapper-bot-img1.jpg" alt="portfolio">
+                    <button class="more-btn">
+                        Смотреть проект
+                    </button>
+                </a>
+
+                <div class="wrapper__bot__desc-title">
+                   <a class="wrapper__bot__desc-title-link mix wp" href="#">Верстка “Мир Авто”</a>
+                </div>
+
+                <div class="wrapper__bot__desc-text mix wp">
+                    Верстка многостраничного сайта. 
+                </div>
+
+            </div>
+
+            <div class="wrapper__bot">
+
+                <a href="#" class="wrapper__bot-img mix boot">
+                    <img src="./img/portfolio/wrapper-bot-img2.jpg" alt="portfolio">
+                    <button class="more-btn">
+                        Смотреть проект
+                    </button>
+                </a>
+
+                <div class="wrapper__bot__desc-title">
+                   <a class="wrapper__bot__desc-title-link mix boot" href="#">Верстка “Мир Авто”</a>
+                </div>
+
+                <div class="wrapper__bot__desc-text mix boot">
+                    Верстка многостраничного сайта. 
+                </div>
+
+            </div>
+
+            <div class="wrapper__bot">
+
+                <a href="#" class="wrapper__bot-img">
+                    <img src="./img/portfolio/wrapper-bot-img3.jpg" alt="portfolio">
+                    <button class="more-btn">
+                        Смотреть проект
+                    </button>
+                </a>
+
+                <div class="wrapper__bot__desc-title">
+                   <a class="wrapper__bot__desc-title-link" href="#">Верстка “Мир Авто”</a> 
+                </div>
+
+                <div class="wrapper__bot__desc-text">
+                    Верстка многостраничного сайта. 
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <footer class="portfolio__footer">
+
+        <div class="portfolio__footer__content">
+            <div class="portfolio__footer__desc">
+                <h3>За созданием сайта:</h3>
+            </div>
+
+            <div class="portfolio__footer__email">
+               <p>
+                  обращайтесь на <a href="#">ediqediq@gmail.com</a> 
+               </p> 
+            </div>
+
+            <div class="skills__col__social">
+                <ul>
+                    <li class="skills__col__social-item"><a href="https://github.com/eduard-m" target="_blank"><i style="color: #000;" class="fab fa-github"></i></a></li>
+                    <li class="skills__col__social-item"><a href="https://t.me/johndi666" target="_blank"><i style="color: #039be5;" class="fab fa-telegram"></i></a></li>
+                    <li class="skills__col__social-item"><a href="https://vk.com/id333322776" target="_blank"><i style="color: #4d76a1;" class="fab fa-vk"></i></a></li>
+                    <li class="skills__col__social-item"><a href="mailto:ediqedid@gmail.com" target="_blank"><i style="color: #9d1a3b;" class="far fa-envelope"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="portfolio__footer__img">
+            <img src="./img/portfolio-bg.png" alt="">
+        </div>
+
+    </footer>
+
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="/libs/mixitup3/mixitup.min.js"></script>
+    <script src="/js/main.js"></script>
+
+</body>
+</html>
+

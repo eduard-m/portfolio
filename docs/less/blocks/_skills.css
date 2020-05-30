@@ -1,0 +1,148 @@
+.skills__content {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .skills__content {
+    flex-direction: row;
+  }
+}
+.skills__column__left {
+  max-width: 605px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .skills__column__left {
+    margin-right: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .skills__column__left {
+    margin-right: 210px;
+  }
+}
+.skills__col__title h3 {
+  margin-bottom: 27px;
+  font-size: 30px;
+  font-weight: 800;
+  color: #000;
+}
+@media (min-width: 768px) {
+  .skills__col__title h3 {
+    font-size: 32px;
+  }
+}
+@media (min-width: 1200px) {
+  .skills__col__title h3 {
+    font-size: 40px;
+  }
+}
+.skills__col__list {
+  margin-bottom: 65px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+}
+@media (min-width: 1200px) {
+  .skills__col__list {
+    font-size: 24px;
+  }
+}
+.skills__col__list li {
+  margin-bottom: 20px;
+}
+.skills__col__list li:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 1200px) {
+  .skills__col__list li {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .skills__col__list ul li::before {
+    content: "—";
+    position: relative;
+    left: -2px;
+  }
+}
+.skills__col__button {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .skills__col__button {
+    display: block;
+  }
+}
+.skills__col__button a {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000;
+  background-color: #fbdc4d;
+  border-radius: 40px;
+  padding: 16px 40px;
+}
+.skills__col__button a:hover {
+  background-color: #ffd200;
+  transition: 0.2s ease-in;
+}
+.skills__col__button a:active {
+  background-color: #e1bc10;
+}
+.skills__column__right {
+  max-width: 325px;
+  width: 100%;
+}
+.skills__col__social {
+  margin-bottom: 6px;
+}
+.skills__col__social-item {
+  display: inline-block;
+  font-size: 40px;
+  margin-right: 30px;
+  opacity: 1;
+  transition: 0.2s;
+}
+.skills__col__social-item:last-child {
+  margin-right: 0;
+}
+.skills__col__social-item:hover {
+  transform: translateY(-10px);
+}
+@media (min-width: 768px) {
+  .skills__col__social-item {
+    font-size: 50px;
+  }
+}
+.skills__col__email {
+  position: relative;
+}
+.skills__col__email::after {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  right: 0;
+  left: 0;
+  height: 1px;
+  width: 228px;
+  background-color: #000;
+}
+.skills__col__email:hover::after {
+  background-color: #6cb9ec;
+  transition: 0.2s ease-in;
+}
+.skills__col__email:active::after {
+  background-color: #ea736d;
+}
+.skills__col__email a {
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+}
+.skills__col__email a:hover {
+  color: #6cb9ec;
+  transition: 0.2s ease-in;
+}
+.skills__col__email a:active {
+  color: #ea736d;
+}
