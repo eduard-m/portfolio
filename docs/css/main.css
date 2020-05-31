@@ -139,15 +139,6 @@ button {
   visibility: hidden;
   z-index: 1000;
 }
-#button::after {
-  content: "\f102";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
-  color: #fff;
-}
 #button:hover {
   cursor: pointer;
   background-color: #ed574f;
@@ -163,6 +154,13 @@ button {
   #button {
     display: inline-block;
   }
+}
+.fa-angle-double-up {
+  display: block;
+  position: relative;
+  font-size: 40px;
+  color: #fff;
+  top: 5px;
 }
 ::-moz-selection {
   background: #fbdc4d;

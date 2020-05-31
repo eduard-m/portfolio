@@ -151,15 +151,7 @@ button {
     visibility: hidden;
     z-index: 1000;
 
-  &::after {
-    content: "\f102";
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 2em;
-    line-height: 50px;
-    color: #fff;
-  }
+
   &:hover {
     cursor: pointer;
     background-color: #ed574f;
@@ -179,6 +171,14 @@ button {
   @media (min-width: 1200px) {
     display: inline-block;
   }
+}
+
+.fa-angle-double-up {
+  display: block;
+  position: relative;
+  font-size: 40px;
+  color: #fff;
+  top: 5px;
 }
 
 ::selection {
