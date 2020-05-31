@@ -35,6 +35,8 @@
 @media (min-width: 1200px) {
   .skills__col__title h3 {
     font-size: 40px;
+    padding-top: 200px;
+    margin-top: -200px;
   }
 }
 .skills__col__list {
@@ -107,7 +109,7 @@
   margin-right: 0;
 }
 .skills__col__social-item:hover {
-  transform: translateY(-10px);
+  transform: translateY(-3px);
 }
 @media (min-width: 768px) {
   .skills__col__social-item {

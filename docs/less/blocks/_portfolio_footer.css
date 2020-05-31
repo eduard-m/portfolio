@@ -69,6 +69,7 @@
 }
 @media (min-width: 1200px) {
   .portfolio__footer__img {
+    margin: auto;
     margin-top: -210px;
   }
 }

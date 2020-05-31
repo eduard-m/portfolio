@@ -1,6 +1,5 @@
 .projects__header {
   padding: 61px 0 0;
-  max-width: 1600px;
 }
 @media (min-width: 768px) {
   .projects__header {
@@ -355,6 +354,7 @@
 }
 @media (min-width: 1200px) {
   .projects__footer__img {
+    margin: auto;
     margin-top: -210px;
   }
 }

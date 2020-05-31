@@ -179,7 +179,6 @@ button {
 }
 .header {
   padding: 61px 0 140px;
-  max-width: 1600px;
   overflow: hidden;
 }
 @media (min-width: 768px) {
@@ -541,7 +540,7 @@ button {
 }
 .info__name .line__bottom {
   font-size: 42px;
-  font-weight: 700;
+  font-weight: 800;
   color: #000;
   line-height: 1.2;
 }
@@ -668,6 +667,7 @@ button {
 }
 @media (min-width: 1200px) {
   .background__img {
+    margin: auto;
     margin-top: -125px;
   }
 }
@@ -724,6 +724,8 @@ button {
 @media (min-width: 1200px) {
   .skills__col__title h3 {
     font-size: 40px;
+    padding-top: 200px;
+    margin-top: -200px;
   }
 }
 .skills__col__list {
@@ -804,11 +806,11 @@ button {
   margin-right: 0;
 }
 .skills__col__social-item:hover {
-  -webkit-transform: translateY(-10px);
-     -moz-transform: translateY(-10px);
-      -ms-transform: translateY(-10px);
-       -o-transform: translateY(-10px);
-          transform: translateY(-10px);
+  -webkit-transform: translateY(-3px);
+     -moz-transform: translateY(-3px);
+      -ms-transform: translateY(-3px);
+       -o-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 @media (min-width: 768px) {
   .skills__col__social-item {
@@ -1581,7 +1583,6 @@ button {
     -moz-background-size: auto;
          background-size: auto;
     background-repeat: repeat;
-    max-width: 1600px;
   }
 }
 .contacts .content__title {
@@ -2080,12 +2081,12 @@ textarea {
 }
 @media (min-width: 1200px) {
   .portfolio__footer__img {
+    margin: auto;
     margin-top: -210px;
   }
 }
 .projects__header {
   padding: 61px 0 0;
-  max-width: 1600px;
 }
 @media (min-width: 768px) {
   .projects__header {
@@ -2553,12 +2554,12 @@ textarea {
 }
 @media (min-width: 1200px) {
   .projects__footer__img {
+    margin: auto;
     margin-top: -210px;
   }
 }
 .contacts__header {
   padding: 35px 0 35px;
-  max-width: 1600px;
 }
 @media (min-width: 768px) {
   .contacts__header {
@@ -2596,7 +2597,6 @@ textarea {
     -moz-background-size: auto;
          background-size: auto;
     background-repeat: repeat;
-    max-width: 1600px;
   }
 }
 .contacts__page .content__title {
