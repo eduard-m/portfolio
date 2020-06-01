@@ -391,6 +391,9 @@ button {
 }
 .header__menu-item:focus {
   border: 3px dotted #ea736d;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .header__menu-item::after {
   content: "";

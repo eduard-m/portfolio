@@ -146,6 +146,7 @@
 }
 .header__menu-item:focus {
   border: 3px dotted #ea736d;
+  width: fit-content;
 }
 .header__menu-item::after {
   content: "";
