@@ -58,3 +58,21 @@
 .portfolio__wrapper__bot:last-child {
   margin-bottom: 0;
 }
+.portfolio__works .wrapper__bot:last-child {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .portfolio__works .wrapper__bot:last-child {
+    display: block;
+  }
+}
+.porfolio__wrapper-rightcol {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 1200px) {
+  .porfolio__wrapper-rightcol {
+    max-width: 555px;
+  }
+}
