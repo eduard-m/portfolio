@@ -1941,7 +1941,7 @@ textarea {
   transition: .2s;
 }
 .portfolio__header {
-  padding: 61px 0 30px;
+  padding: 20px 0 30px;
   background-color: #f4f8f9;
   overflow: hidden;
 }
@@ -2122,7 +2122,7 @@ textarea {
   }
 }
 .projects__header {
-  padding: 61px 0 0;
+  padding: 20px 0 0;
 }
 @media (min-width: 768px) {
   .projects__header {
@@ -2595,7 +2595,7 @@ textarea {
   }
 }
 .contacts__header {
-  padding: 35px 0 35px;
+  padding: 20px 0 35px;
 }
 @media (min-width: 768px) {
   .contacts__header {
@@ -2638,5 +2638,16 @@ textarea {
 .contacts__page .content__title {
   text-align: center;
   margin-bottom: 80px;
+}
+.contacts__page .contacts__content__wrapper {
+  margin-bottom: 35px;
+}
+.contacts__page .skills__col__social {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .contacts__page .skills__col__social {
+    text-align: unset;
+  }
 }
 /*# sourceMappingURL=main.css.map */

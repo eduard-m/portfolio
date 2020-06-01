@@ -1,5 +1,5 @@
 .contacts__header {
-  padding: 35px 0 35px;
+  padding: 20px 0 35px;
 }
 @media (min-width: 768px) {
   .contacts__header {
@@ -40,4 +40,15 @@
 .contacts__page .content__title {
   text-align: center;
   margin-bottom: 80px;
+}
+.contacts__page .contacts__content__wrapper {
+  margin-bottom: 35px;
+}
+.contacts__page .skills__col__social {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .contacts__page .skills__col__social {
+    text-align: unset;
+  }
 }
