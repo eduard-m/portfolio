@@ -16,6 +16,9 @@ body {
   line-height: 1.5;
   position: relative;
 }
+.body.lock {
+  overflow: hidden;
+}
 a,
 a:hover {
   text-decoration: none;

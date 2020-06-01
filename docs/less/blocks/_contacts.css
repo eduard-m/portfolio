@@ -37,14 +37,10 @@
     align-items: center;
   }
 }
-.contacts__content__wrapper {
-  margin-bottom: 50px;
-}
 @media (min-width: 768px) {
   .contacts__content__wrapper {
     padding-left: 15px;
     max-width: 339px;
-    margin-bottom: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -125,6 +121,7 @@
   }
 }
 .contacts__form {
+  max-width: 290px ;
   width: 100%;
   padding-top: 61px;
   padding-bottom: 40px;
