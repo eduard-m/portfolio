@@ -8,7 +8,7 @@ $(document).ready(function() {
         mobMenu.classList.toggle('active');
         this.classList.toggle('active');
         overlay.classList.toggle('active');
-        $('body').classList.toggle('lock');
+        document.body.classList.toggle('lock');
 
     });
 
