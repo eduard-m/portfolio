@@ -1,9 +1,9 @@
 .contacts__header {
-  padding: 20px 0 35px;
+  padding: 20px 0 20px;
 }
 @media (min-width: 768px) {
   .contacts__header {
-    padding: 35px 0 35px;
+    padding: 20px 0 20px;
   }
 }
 @media (min-width: 1200px) {
@@ -30,7 +30,7 @@
 }
 @media (min-width: 1200px) {
   .contacts__page {
-    padding: 180px 0;
+    padding: 145px 0;
     background-image: url(../img/contacts/contacts-bg.jpg);
     background-position: center;
     background-size: auto;
@@ -43,6 +43,11 @@
 }
 .contacts__page .contacts__content__wrapper {
   margin-bottom: 35px;
+}
+@media (min-width: 768px) {
+  .contacts__page .contacts__content__wrapper {
+    margin-bottom: 83px;
+  }
 }
 .contacts__page .skills__col__social {
   text-align: center;

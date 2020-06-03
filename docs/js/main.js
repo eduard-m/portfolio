@@ -33,6 +33,61 @@ $(document).ready(function() {
       $('html, body').animate({scrollTop:0}, '300');
     });
 
+    // form validate
+
+    $('#contacts__form').validate({
+      rules:{
+        email: {
+            required: true,
+            email: true
+              },
+        theme: {
+          required: true
+              },
+        message: {
+          required: true
+                }      
+        },
+        messages:{
+          email: {
+            required: 'Введите Ваш email',
+            email: 'Неправильный email адрес'
+              },
+              theme: {
+                required: 'Введите тему сообщения'
+                    },
+                    message: {
+                      required: 'Введите текст сообщения'
+                            }      
+        },
+        submitHandler: function(form) {
+          ajaxFormSubmit();
+        }
+    });
+
+        // Функция AJAX запрса на сервер
+
+        function ajaxFormSubmit() {
+
+          let string = $("#contacts__form").serialize(); // Соханяем данные введенные в форму в строку.
+  
+          //Формируем ajax запрос
+          $.ajax({
+              type: "POST", // Тип запроса - POST
+              url: "php/mail.php", // Куда отправляем запрос
+              data: string, // Какие даные отправляем, в данном случае отправляем переменную string
+  
+              // Функция если все прошло успешно
+              success: function (html) {
+                  $("#contacts__form").slideUp(800);
+                  $('#answer').html(html);
+              }
+          });
+  
+          // Чтобы по Submit больше ничего не выполнялось - делаем возврат false чтобы прервать цепчку срабатывания остальных функций
+          return false;
+      }
+
 
     // placeholder
 

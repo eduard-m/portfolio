@@ -130,10 +130,27 @@
     display: block;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 844px) {
   .working__row:nth-child(even) {
     margin-left: auto;
-    max-width: 52.7%;
+    max-width: 55%;
+  }
+}
+@media (min-width: 890px) {
+  .working__row:nth-child(even) {
+    margin-left: auto;
+    max-width: 54%;
+  }
+}
+@media (min-width: 1013px) {
+  .working__row:nth-child(odd) {
+    max-width: 52.5%;
+  }
+}
+@media (min-width: 1023px) {
+  .working__row:nth-child(even) {
+    margin-left: auto;
+    max-width: 55%;
   }
 }
 @media (min-width: 1200px) {

@@ -30,10 +30,14 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
+    max-width: 755px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: 1200px) {
     align-items: center;
+    max-width: unset;
   }
 }
 
@@ -87,10 +91,15 @@
   flex-direction: column;
 
   @media (min-width: 768px) {
-    margin-bottom: 36px;
+    margin-bottom: 25px;
+    line-height: 1;
     &:last-child {
       margin-bottom: 40px;
     }
+  }
+
+  @media (min-width: 992px) {
+    flex-direction: row;
   }
 
   @media (min-width: 1200px) {
@@ -124,8 +133,18 @@
   max-width: 195px;
   width: 100%;
 
+  @media (min-width:768px) {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width:992px) {
+    max-width: 138px;
+  }
+  
+
   @media (min-width: 1200px) {
     font-size: 20px;
+    margin-bottom: 0;
   }
 }
 
