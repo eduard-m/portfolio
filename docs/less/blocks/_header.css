@@ -231,6 +231,7 @@
 @media (min-width: 1200px) {
   .header__wrap {
     justify-content: space-between;
+    align-items: flex-start;
   }
 }
 .header__content__photo {
@@ -281,6 +282,7 @@
 }
 .info__name {
   margin-bottom: 35px;
+  line-height: 1;
 }
 .info__name .line__bottom {
   font-size: 42px;

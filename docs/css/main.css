@@ -538,6 +538,11 @@ button {
        -moz-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+       -moz-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 .header__content__photo {
@@ -588,6 +593,7 @@ button {
 }
 .info__name {
   margin-bottom: 35px;
+  line-height: 1;
 }
 .info__name .line__bottom {
   font-size: 42px;
