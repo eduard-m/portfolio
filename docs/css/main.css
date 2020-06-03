@@ -503,11 +503,12 @@ button {
      -moz-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-     -moz-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   z-index: 2;
 }
 @media (min-width: 768px) {
@@ -524,11 +525,7 @@ button {
        -moz-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-       -moz-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    text-align: unset;
   }
 }
 @media (min-width: 1200px) {
@@ -1883,7 +1880,7 @@ button {
   }
 }
 .contacts__form {
-  max-width: 290px ;
+  max-width: 400px ;
   width: 100%;
   padding-top: 61px;
   padding-bottom: 40px;
