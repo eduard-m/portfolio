@@ -64,6 +64,35 @@ button {
   cursor: pointer;
 }
 
+#page-nav {
+
+  @media (min-width:1200px){
+  position: fixed;
+  right: 50px;
+  top: 50%;
+  z-index: 100;
+  }
+
+}
+
+#page-nav li {
+  width: 14px;
+  height: 14px;
+  background-color: #89b4cb;
+  border-radius: 50%;
+  margin-bottom: 26px;
+  transition: .5s;
+}
+
+#page-nav li a {
+  display: block;
+  height: 100%;
+}
+
+#page-nav li.active {
+  background-color: #ea736d;
+}
+
 .container {
   max-width: 1110px;
   padding-left: 15px;

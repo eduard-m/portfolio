@@ -7,6 +7,11 @@
     flex-direction: row;
   }
 }
+@media (min-width: 1200px) {
+  .skills__content {
+    justify-content: space-between;
+  }
+}
 .skills__column__left {
   max-width: 605px;
   width: 100%;
@@ -14,11 +19,6 @@
 @media (min-width: 768px) {
   .skills__column__left {
     margin-right: 30px;
-  }
-}
-@media (min-width: 1200px) {
-  .skills__column__left {
-    margin-right: 210px;
   }
 }
 .skills__col__title h3 {
