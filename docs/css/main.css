@@ -2246,6 +2246,7 @@ textarea {
 }
 .projects__header {
   padding: 20px 0 0;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   .projects__header {
